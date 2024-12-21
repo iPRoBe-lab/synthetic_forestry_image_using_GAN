@@ -84,22 +84,22 @@ if __name__ == '__main__':
     parser.add_argument('--file_type', type=str, default='/*.jpg')
     
     # path details
-    parser.add_argument('--image_path', type=str, default='/research/iprobe-paldebas/Research_Work/GAN (Phenology Images)/phenocamdata/')
+    parser.add_argument('--image_path', type=str, default='/research/iprobe-paldebas/Research_Work/GAN (Phenology Images)/phenocamdata/', help='path to images')
     parser.add_argument('--model_save_path', type=str, default='models')
     parser.add_argument('--sample_path', type=str, default='samples')
     parser.add_argument('--log_path', type=str, default='logs')
     parser.add_argument('--save_plot_path', type=str, default='plots')
     
     # model parameters 
-    parser.add_argument('--model', type=str, default='DCGAN', choices=['DCGAN','DCGAN_1'])
+    parser.add_argument('--model', type=str, default='DCGAN', choices=['DCGAN','DCGAN_1'], help='DCGAN- With Self-attention, DCGAN_1- Without Self-attention')
     parser.add_argument('--adv_loss', type=str, default='HingeGAN', choices=['HingeGAN'])
-    parser.add_argument('--version', type=str, default= 'v13_SN_SA_3_orthogonal_wo_roi_retest_0.5')
-    parser.add_argument('--spectral_G', default=True, help='Whetherto use spectral normalization in generator')
-    parser.add_argument('--spectral_D', default=True, help='Whether to use spectral normalization in discriminator')
-    parser.add_argument('--batch_norm_G', default=True, help='Whether to use batch normalization in generator')
-    parser.add_argument('--batch_norm_D', default=True, help='Whether to use batch normalization in discriminator')
-    parser.add_argument('--bias_G', default=False, help='Bias in generator')
-    parser.add_argument('--bias_D', default=False, help='Bias in discriminator')
+    parser.add_argument('--version', type=str, default= 'v13_SN_SA_3_orthogonal_wo_roi_retest_0.5', help='Version to help tracking different runs')
+    parser.add_argument('--spectral_G', default=True, type=bool, help='Whether to use spectral normalization in generator')
+    parser.add_argument('--spectral_D', default=True, type=bool, help='Whether to use spectral normalization in discriminator')
+    parser.add_argument('--batch_norm_G', default=True, type=bool, help='Whether to use batch normalization in generator')
+    parser.add_argument('--batch_norm_D', default=True, type=bool, help='Whether to use batch normalization in discriminator')
+    parser.add_argument('--bias_G', default=False, type=bool, help='Bias in generator')
+    parser.add_argument('--bias_D', default=False, type=bool, help='Bias in discriminator')
     
     
     # details of training paramaters
