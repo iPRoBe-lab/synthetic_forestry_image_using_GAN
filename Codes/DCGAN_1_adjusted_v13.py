@@ -1,3 +1,4 @@
+# Used to run the model without self-attentions
 import torch
 import torch.nn as nn
 import torch.nn.utils.spectral_norm as SpectralNorm
