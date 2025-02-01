@@ -3,4 +3,4 @@
 
 <b>Link to paper:</b>  https://doi.org/10.1016/j.patcog.2025.111385
 
-![Image not available.](figures/Outline.jpg)
+![Image not available.](figures/Goal.jpg)
