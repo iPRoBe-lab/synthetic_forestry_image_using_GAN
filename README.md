@@ -3,6 +3,8 @@
 
 <b>Link to paper:</b>  https://doi.org/10.1016/j.patcog.2025.111385
 
+<b>Cite As:</b> D. Pal, A. Ross, “Synthesizing Forestry Images Conditioned on Plant Phenotype Using a Generative Adversarial Network,” Pattern Recognition, Vol. 162, ISSN 0031-3203, 2025, doi: 10.1016/j.patcog.2025.111385. 
+
 <p align="center">
   <img src="figures/Goal.jpg" alt="Image not available.">
 </p>
